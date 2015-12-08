@@ -154,7 +154,11 @@ Z1.sim.sgopgunmen <- sim(Z1, x = Z1.sgopgunmen)
 Z1.sim.sgopwomen <- sim(Z1, x = Z1.sgopwomen)
 Z1.sim.sgopmen <- sim(Z1, x = Z1.sgopmen)
 Z1.sim.sgopgunmencollege <- sim(Z1, x = Z1.sgopgunmencollege)
-summary(Z1.sim)
+summary(Z1.sim.sgopgunwomen)
+summary(Z1.sim.sgopgunmen)
+summary(Z1.sim.sgopwomen)
+summary(Z1.sim.sgopmen)
+summary(Z1.sim.sgopgunmencollege)
 
 ggCaterpillar(lme4::ranef(M1,condVar=TRUE), QQ=FALSE, likeDotplot=TRUE, reorder=FALSE)[["regioncondensed"]]
 
