@@ -66,7 +66,7 @@ GSS$regioncondensed <- NA
 GSS$regioncondensed <- with(GSS, ifelse(region == 8 | region == 9, "West", regioncondensed))
 GSS$regioncondensed <- with(GSS, ifelse(region == 3 | region == 4, "Midwest", regioncondensed))
 GSS$regioncondensed <- with(GSS, ifelse(region == 5 | region == 6 | region == 7, "South", regioncondensed))
-GSS$regioncondensed <- with(GSS, ifelse(region == 1 | region == 1, "Northeast", regioncondensed))
+GSS$regioncondensed <- with(GSS, ifelse(region == 1 | region == 2, "Northeast", regioncondensed))
 
 GSS$gun <- with(GSS, recode(gun, "1=1; 2=0"))
 GSS$gunlaw <- with(GSS, recode(gunlaw, "1=1; 2=0"))
